@@ -1,0 +1,80 @@
+
+body {
+    background-color: beige;
+}
+
+main {
+    
+}
+
+
+header {
+    font-size: 60px;
+    color: black;
+    font-family: bold;
+}
+
+p {
+    font-size: 30px;
+    color: black;
+}
+
+#displaychoice {
+    display: flex;
+}
+#playerdisplay, #cpudisplay {
+    font-size: 40px;
+    background-color: black;
+    color: yellow;
+    width: 20%;
+    border: solid yellow 1px;
+    margin-bottom: 25px;
+    
+    
+}
+
+#rock {
+background-image: url (".rock.png"); 
+    
+}
+.rock {
+    background-image: url ('./assets/rock.png');
+}
+
+input[type='radio'] + rock {
+    background-image: url ('./assets/rock2.png');
+}
+
+#displayresults {
+    font-size: 70px;
+    background-color: black;
+    color: red;
+    width: 20%;
+    border: solid red 1px;
+    margin-bottom: 25px;
+    margin-left: 300px;
+}
+
+#displaytracker {
+    font-size: 30px;
+    background-color: black;
+    color: yellow;
+    border: solid yellow 1px;
+    width: 20%;
+    margin-bottom: 25px;
+}
+
+#playbutton {
+    font-size: 50px;
+    background-color: black;
+    color: yellow;
+    border: solid yellow 1px;
+    width: 20%;
+    margin-bottom: 25px;
+    cursor: pointer;
+    
+}
+
+#playbutton:hover {
+    border: solid yellow 5px;
+}
