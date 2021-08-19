@@ -23,17 +23,12 @@ let rpsArray = ['rock', 'paper', 'scissor'];
 playButton.addEventListener('click', () => {
     throws++;
     let computerChoice = getRandomThrow(rpsArray);
-    console.log(computerChoice);
     let player = document.querySelector('input:checked');
-    console.log(player.value);
     let result = didUserWin(player.value, computerChoice);
-    console.log(didUserWin(player.value, computerChoice));
-
-
+    
     playerDisplay.textContent = `You selected: ${player.value}`;
     cpuDisplay.textContent = `Computer selected: ${computerChoice}`;
     displayResults.textContent = `You ${result}!`;
-
     resultsTracker(result);
     displayTracker.textContent = `Wins: ${wins} \n Losses: ${losses} \n Draws: ${draws}`;
 });
@@ -43,7 +38,4 @@ function resultsTracker(result) {
     if (result === 'win') wins++;
     if (result === 'lose') losses++;
     if (result === 'draw') draws++;
-}
-function playerChoice() {
-
 }
