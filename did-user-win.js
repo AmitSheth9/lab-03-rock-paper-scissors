@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 export function didUserWin(player, cpu) {
-    //if player choice is rock and cpu choice is scissor, p wins
-    //if cpu is paper, c wins etc..
+    
     let result = '';
     if (player === 'rock' && cpu === 'rock') return result = 'draw';
     if (player === 'rock' && cpu === 'paper') return result = 'lose';
