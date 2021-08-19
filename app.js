@@ -32,7 +32,7 @@ playButton.addEventListener('click', () => {
 
     playerDisplay.textContent = `You selected: ${player.value}`;
     cpuDisplay.textContent = `Computer selected: ${computerChoice}`;
-    displayResults.textContent = `You ${result}`;
+    displayResults.textContent = `You ${result}!`;
 
     resultsTracker(result);
     displayTracker.textContent = `Wins: ${wins} \n Losses: ${losses} \n Draws: ${draws}`;
