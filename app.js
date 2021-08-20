@@ -11,7 +11,7 @@ const scissor = document.querySelector('#scissor');
 const playButton = document.querySelector('#playbutton');
 const displayResults = document.querySelector('#displayresults');
 const displayTracker = document.querySelector('#displaytracker');
-
+const resetButton = document.querySelector('#buttonReset');
 
 let wins = 0;
 let losses = 0;
@@ -39,3 +39,7 @@ function resultsTracker(result) {
     if (result === 'lose') losses++;
     if (result === 'draw') draws++;
 }
+
+resetButton.addEventListener('click', () => {
+    location.reload();
+});

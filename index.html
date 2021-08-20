@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link rel="stylesheet" href="./styles/home.css">
     <link rel='stylesheet' href = 'style.css'>
     <title>Document</title>
@@ -23,11 +23,12 @@
     </div><br>
 
     <form>
-        <label for='rock'><img src='rock.png'><input type='radio' id='rock' name='playerchoice' value='rock'>Rock</label>
-        <label for='paper'><img src='paper2.png'><input type='radio' id='paper' name='playerchoice' value='paper'>Paper</label>
-        <label for='scissor'><img src='scissors.png'><input type='radio' id='scissor' name='playerchoice' value='scissor'>Scissor</label>
+        <label for='rock'><input type='radio' id='rock' name='playerchoice' value='rock'>Rock<img src='rock.png'></label>
+        <label for='paper'><input type='radio' id='paper' name='playerchoice' value='paper'>Paper<img src='paper2.png'></label>
+        <label for='scissor'><input type='radio' id='scissor' name='playerchoice' value='scissor'>Scissor<img src='scissors.png'></label>
     </form>
     <button type='button' id='playbutton'>Play RPS</button>
+    <button id="buttonReset">Reset</button>
     <div id='displayresults'></div>
     <div id=displaytracker></div>       
     </main>
